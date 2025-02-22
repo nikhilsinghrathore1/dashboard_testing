@@ -45,10 +45,10 @@ const SideNavBar:React.FC<val> = ({current}) => {
 
                               {/* this is the single menu component  */}
 
-                              {[{heading:"dashboard" , icons:FaKey , reff:"/admindashboard", status : current === "AdminDashboard" }  , {heading:"crash report" , icons:CiUser , reff:"/admindashboard/crashReport" , status : current === "crash Report"} ,   {heading:"payments" , icons:CiWallet , reff:"/admindashboard/payment" , status : current === "payment"} , {heading:"Email" , icons:CiWallet , reff:"/admindashboard/email"} ,{heading:"Settings" , icons:CiSquareQuestion, reff:"/admindashboard/settings" ,  status : current === "settings"} ].map((e,i)=>(
+                              {[{heading:"dashboard" , icons:FaKey , reff:"/admindashboard", status : current === "AdminDashboard"}  , {heading:"crash report" , icons:CiUser , reff:"/admindashboard/crashReport" , status : current === "crash Report"} ,   {heading:"payments" , icons:CiWallet , reff:"/admindashboard/payment" , status : current === "payment"} , {heading:"Email" , icons:CiWallet , reff:"/admindashboard/email" ,status : current === "email"} ,{heading:"Settings" , icons:CiSquareQuestion, reff:"/admindashboard/settings" ,  status : current === "settings"} ].map((e,i)=>(
                                              <Menu key={i} icons={e.icons}  heading={e.heading} reff={e.reff} status = {e.status}/>
                                 ))}
-                                <div onClick={()=>window.location.href="https://ed-tech-alpha.vercel.app"} className={`w-full flex justify-between  py-[10px] rounded-[9px] pl-3 pr-[5px] items-center ${status ? "bg-[#5932ea] text-white" :"opacity-45"} hover:bg-[#5932ea]  hover:opacity-100 hover:text-white  h-fit`}>
+                                <div onClick={()=>window.location.href="https://ed-tech-alpha.vercel.app"} className={`w-full flex justify-between  py-[10px] rounded-[9px] pl-3 pr-[5px] items-center  bg-[#5932ea] text-white`}>
                {/* inner div for the logo and text  */}
                               <div className=' capitalize h-full font-semibold  flex gap-[10px]  items-center'>        
 
