@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 
 import { TbSettings2 } from "react-icons/tb";
