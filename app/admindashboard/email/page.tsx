@@ -10,9 +10,9 @@ const page = () => {
                               <TopNavigation/>
 
                             <div className='w-full  flex items-center h-[80vh] p-4  gap-5 justify-start  flex-wrap'>
-                              {[1,2,3,4,5,6,7,4,5,6,7,1,].map(e=>(
+                              {[1,2,3,4,5,6,7,4,5,6,7,1,].map((e,i)=>(
 
-                                          <div className='flex-col p-2 border-[1px] border-black rounded-xl h-[30%] w-[20%] '>
+                                          <div key={i} className='flex-col p-2 border-[1px] border-black rounded-xl h-[30%] w-[20%] '>
                                             <div className='w-full flex gap-2 items-center '>
                                               <div className='w-8 h-8 overflow-hidden object-cover rounded-full'>
                                                 <img src="https://pbs.twimg.com/profile_images/1823258081062428673/5uXY9oAC_400x400.jpg" alt="not showing" />
@@ -25,7 +25,7 @@ const page = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste illo fugiat nisi placeat culpa.</p>
 
                                           </div>
-                                      
+
                               )
 
                               )}
