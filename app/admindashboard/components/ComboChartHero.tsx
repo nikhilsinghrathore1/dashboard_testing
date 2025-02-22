@@ -73,8 +73,8 @@ export const ComboChartHero = () => (
     index="date"
     enableBiaxial={true}
     barSeries={{
-      categories: ["SolarPanels"],
-      yAxisLabel: "Solar Panels (Bars)",
+      categories: ["stocks"],
+      yAxisLabel: "market eval(Bars)",
     }}
     lineSeries={{
       categories: ["Inverters"],

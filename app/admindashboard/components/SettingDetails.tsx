@@ -22,8 +22,8 @@ const SettingDetails = () => {
                        </div>
 
                        <div className='w-full uppercase tracking-tight text-sm mt-7'>
-                         <p className='font-semibold text-[10px] opacity-80'>Status</p>
-                         <input className='outline-none bg-transparent w-full mt-2 border-b-[1px] border-black/50 border-dashed' type="text" placeholder='Active' />
+                         <p className='font-semibold text-[10px] opacity-80'>Trading style</p>
+                         <input className='outline-none bg-transparent w-full mt-2 border-b-[1px] border-black/50 border-dashed' type="text" placeholder='day trading' />
                        </div>
 
                    {/* this is the buffer thingy avoiding it for now  */}
@@ -33,13 +33,13 @@ const SettingDetails = () => {
 
                    <div className='flex w-full mt-5 justify-between'>
                          <div className='w-[49%] '>
-                       {["work phone" , "mobile"].map((e,i)=>(
+                       {["Trades Executed" , "Trade Profit"].map((e,i)=>(
 
                          <InputField key={i} text={e}/>
                          ))}
                          </div>
                          <div className='w-[49%]  '>
-                             {["email" , "address"].map((e,i)=>(
+                             {["Favorite Asset" , "Risk Appetite"].map((e,i)=>(
 
                          <InputField key={i} text={e}/>
                          ))}

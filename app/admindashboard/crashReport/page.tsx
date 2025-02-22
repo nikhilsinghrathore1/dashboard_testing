@@ -31,7 +31,7 @@ const Page = () => {
                               {/* outer container div */}
                               <div className='w-full px-3 h-[90%]'>
                                              <div className='w-full h-[40%] mt-4 flex gap-3 '>
-                                                            {[{text:"Crash Frequency" , width:"40" , Comp:ComboChartHero}, {text:"User Impact" , width:"30" , Comp:DonutChartHero}, {text:"Error types" , width:"30" , Comp:BarListHero}].map((e,i)=>(
+                                                            {[{text:"Crash Frequency" , width:"40" , Comp:ComboChartHero}, {text:"Market impact" , width:"30" , Comp:DonutChartHero}, {text:"trading types" , width:"30" , Comp:BarListHero}].map((e,i)=>(
 
                                                                            <GraphComp padding={0} Comp={e.Comp} key={i} text={e.text} width={e.width}/>
                                                             ))}
@@ -45,7 +45,7 @@ const Page = () => {
                                                                            <p className='text-[0.8rem] opacity-80'>Search</p>
                                                             </div>
                                                             <div className='px-10 py-[5px] bg-[#F5F5FF] flex items-center gap-3 text-[1rem] rounded-md '>
-                                                                           <p className='text-[0.8rem] opacity-80'>Tickets Raised on</p>
+                                                                           <p className='text-[0.8rem] opacity-80'>Trade Raised on</p>
                                                                            <RiExpandUpDownLine/>
                                                             </div>
                                                             <div className='px-10 py-[5px] bg-[#F5F5FF] flex items-center gap-3 text-[1rem] rounded-md '>

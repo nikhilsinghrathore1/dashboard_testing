@@ -29,7 +29,7 @@ const Page = () => {
                                                             {/*  this is teh top filter section */}
                                                             <div className='w-full px-4 flex justify-between items-center'>
                                                                            {/* this is the main heading */}
-                                                                           <div className='text-[1.15rem] font-bold tracking-tight'>Company Invoices</div>
+                                                                           <div className='text-[1.15rem] font-bold tracking-tight'>Transaction History</div>
 
                                                                            <div className='flex gap-3 text-[1rem] opacity-70 '>
                                                                            <IoIosSearch/>
@@ -50,7 +50,7 @@ const Page = () => {
                                                                            <div className='w-8 h-8 rounded-lg overflow-hidden  bg-black'>
                                                                                           <img className='w-full h-full object-contain' src="https://cdn.pixabay.com/photo/2015/10/20/21/05/mcdonald-998495_1280.png" alt="not showing" />
                                                                            </div>
-                                                                           <h1>McDonalds</h1>
+                                                                           <h1>Stonks</h1>
                                                             </div>
 
                                                             {/* this is the list thingy section wierd */}
